@@ -1,6 +1,7 @@
 import ShipCard from "../ShipCard/ShipCard";
 import getStarShips from '../../services/sw-api'
 import { useEffect, useState } from "react";
+import './Ships.css'
 
 const Ship = () => {
   const [ships, setShips] = useState ([])
@@ -14,16 +15,18 @@ const Ship = () => {
   },[])
   console.log(ships)
   return (
-    <ul>
-      <h1>All Ship Cards</h1>
-      {ships.map((ship) => (
-        <ShipCard
-          className="container" 
-          key={ship._id}
-          ship = {ship}
-        />
-      ))}
-    </ul>
+    <div className="outside-container">
+      <ul>
+        <h1>All Ship Cards</h1>
+        {ships.map((ship) => (
+          <ShipCard
+            className="container" 
+            key={ship._id}
+            ship = {ship}
+          />
+        ))}
+      </ul>
+    </div>
   );
 }
 

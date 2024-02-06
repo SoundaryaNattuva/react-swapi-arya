@@ -7,9 +7,9 @@ const ShipCard = (props) => {
 
       <section className="each-card">
         <Link 
-          to={`/shipdetails/${props.ship.name}`} 
-          props={props.ship} >
-            {props.ship.name}
+          to={`/shipdetails/${props.ship.url.replace('https://swapi.dev/api/starships/',"")}`}
+        >
+            <h2>{props.ship.name}</h2>
         </Link>
       </section>
 
