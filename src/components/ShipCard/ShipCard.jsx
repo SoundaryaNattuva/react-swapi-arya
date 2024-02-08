@@ -15,5 +15,5 @@ const ShipCard = (props) => {
 
   );
 }
- 
+
 export default ShipCard;

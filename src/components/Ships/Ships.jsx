@@ -13,6 +13,8 @@ const Ship = () => {
     }
     fetchShipData()
   },[])
+
+  
   console.log(ships)
   return (
     <div className="outside-container">
