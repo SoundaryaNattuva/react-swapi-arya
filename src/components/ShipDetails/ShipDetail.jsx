@@ -21,8 +21,8 @@ const ShipDetails = (props) => {
   return ( 
     <div>
       <div className="details-card">
-          <h2>Name: {ship.name} </h2>
-          <h2>Model: {ship.model} </h2>
+          <p>Name: {ship.name} </p>
+          <p>Model: {ship.model} </p>
           <Link to='/ships'> Return </Link>
       </div>
     </div>
